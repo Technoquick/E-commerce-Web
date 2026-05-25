@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0px 25px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  justify-content: flex-end;
+  gap: 20px;
+
+  a {
+    color: #555;
+    text-decoration: none;
+  }
+}
+.headerContent {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.headerContentItem {
+  flex: 1;
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0px;
+  }
+  p {
+    color: #555;
+  }
+  img {
+    width: 100%;
+    padding: 50px 0px;
+  }
+}
+/* Categories */
+.categories {
+
+  margin: 70px 0px;
+
+  .categories-item {
+
+    display: flex;
+     justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+       max-width: 1080px;
+    flex-direction: column;
+     align-items: center;
+     margin: auto;
+    
+    
+  }
+
+  .categories-item img {
+
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+
+    /* width:32%;
+    height: auto; */
+    /* flex-basis: 20%;
+    min-width: 32%; */
+  }
+  @media (max-width: 768px) {
+    .categories .container img {
+      flex-basis: 100%;
+      min-width: 100%;
+    }
+  }
+}
+
+/* styling Features */
+.features-products {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    color: #555;
+    line-height: 60px;
+
+    text-align: center;
+  }
+  .customUnderlineContainer {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .customUnderline {
+    width: 80px;
+    height: 5px;
+    background-color: #f34646;
+    border-radius: 5px;
+  }
+}
+
+.productConatiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .productCard {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    padding: 10px;
+    margin-bottom: 50px;
+    flex-basis: calc(25% - 20px);
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+  }
+  .product-title{
+    color: #555;
+
+  }
+  .product-price{
+    color: #555;
+    font-size: 14px;
+   
+  }
+  .productCard:hover {
+    transform: translate(-5px);
+   
+
+  }
+}
