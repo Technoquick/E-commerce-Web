@@ -24,6 +24,7 @@
     text-decoration: none;
   }
 }
+
 .headerContent {
   margin-top: 70px;
   display: flex;
@@ -32,19 +33,23 @@
 
 .headerContentItem {
   flex: 1;
+
   h1 {
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0px;
   }
+
   p {
     color: #555;
   }
+
   img {
     width: 100%;
     padding: 50px 0px;
   }
 }
+
 /* Categories */
 .categories {
 
@@ -53,29 +58,35 @@
   .categories-item {
 
     display: flex;
-     justify-content: center;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-       max-width: 1080px;
-    flex-direction: column;
-     align-items: center;
-     margin: auto;
-    
-    
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1080px;
+
+    /* changing the flex direction to row for larger screens */
+
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+
+
   }
 
   .categories-item img {
 
-    width: 250px;
+    /* width: 250px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 10px; */
 
     /* width:32%;
     height: auto; */
-    /* flex-basis: 20%;
-    min-width: 32%; */
+
+
+    flex-basis: 20%;
+    min-width: 32%;
   }
+
   @media (max-width: 768px) {
     .categories .container img {
       flex-basis: 100%;
@@ -98,11 +109,13 @@
 
     text-align: center;
   }
+
   .customUnderlineContainer {
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
   }
+
   .customUnderline {
     width: 80px;
     height: 5px;
@@ -127,18 +140,76 @@
     box-sizing: border-box;
     transition: transform 0.3s ease-in-out;
   }
-  .product-title{
+
+  .product-title {
     color: #555;
 
   }
-  .product-price{
+
+  .product-price {
     color: #555;
     font-size: 14px;
-   
-  }
-  .productCard:hover {
-    transform: translate(-5px);
-   
 
   }
+
+  .productCard:hover {
+    transform: translate(-5px);
+
+
+  }
+}
+.smart-watch-banner{
+  margin-top: 80px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px 0px;
+
+  .container{
+    display: flex;
+     flex-wrap: wrap;
+     max-width: 1080px;
+      margin: auto;
+    align-items: center;
+    padding: 0px 25px;
+    justify-content: space-around;
+    gap: 20px;
+   
+    .smart-watch-image-container{
+      flex: 1;
+      padding: 50px;
+      img{
+        width: 100%;
+      }
+
+    }
+    .smart-watch-banner-content{
+      flex:1;
+
+      .smart-watch-title{
+        color: #555;
+
+      }
+      .smart-watch-subTitle{
+        font-size: 50px;
+        line-height: 60px;
+        margin: 25px 0px;
+      }
+        .smart-watch-description{
+          color: #555;
+          font-size: 15px;
+        }
+        .buyNowButton{
+          background-color: #ff523b;
+          color: white;
+          margin: 30px 0px;
+          padding: 8px 30px;
+          cursor: pointer;
+          border-radius: 30px;
+          border: none;
+          transition: background-color 0.3s ease-in-out;
+        }
+        .buyNowButton:hover{
+          background-color: #3c0a01;
+    }
+  }
+}
 }
