@@ -158,58 +158,143 @@
 
   }
 }
-.smart-watch-banner{
+
+.smart-watch-banner {
   margin-top: 80px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 30px 0px;
 
-  .container{
+  .container {
     display: flex;
-     flex-wrap: wrap;
-     max-width: 1080px;
-      margin: auto;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    margin: auto;
     align-items: center;
     padding: 0px 25px;
     justify-content: space-around;
     gap: 20px;
-   
-    .smart-watch-image-container{
+
+    .smart-watch-image-container {
       flex: 1;
       padding: 50px;
-      img{
+
+      img {
         width: 100%;
       }
 
     }
-    .smart-watch-banner-content{
-      flex:1;
 
-      .smart-watch-title{
+    .smart-watch-banner-content {
+      flex: 1;
+
+      .smart-watch-title {
         color: #555;
 
       }
-      .smart-watch-subTitle{
+
+      .smart-watch-subTitle {
         font-size: 50px;
         line-height: 60px;
         margin: 25px 0px;
       }
-        .smart-watch-description{
-          color: #555;
-          font-size: 15px;
-        }
-        .buyNowButton{
-          background-color: #ff523b;
-          color: white;
-          margin: 30px 0px;
-          padding: 8px 30px;
-          cursor: pointer;
-          border-radius: 30px;
-          border: none;
-          transition: background-color 0.3s ease-in-out;
-        }
-        .buyNowButton:hover{
-          background-color: #3c0a01;
+
+      .smart-watch-description {
+        color: #555;
+        font-size: 15px;
+      }
+
+      .buyNowButton {
+        background-color: #ff523b;
+        color: white;
+        margin: 30px 0px;
+        padding: 8px 30px;
+        cursor: pointer;
+        border-radius: 30px;
+        border: none;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .buyNowButton:hover {
+        background-color: #3c0a01;
+      }
     }
   }
 }
+
+.testimonialParentContainer {
+  padding-top: 70px;
+ 
+  .testimonialInnerContainer {
+    display: flex;
+    margin: auto;
+    max-width: 1080px;
+    padding: 0px 25px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .testimonialCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 40px 20px 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+    min-width: 250px;
+    margin-bottom: 30px;
+    flex-basis: calc(30% - 20px);
+  }
+
+  .testimonialContent {
+    font-size: 12px;
+    margin: 12px 0px;
+    color: #777;
+  }
+
+  .rating {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .userImage {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+  }
+
+  h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+  }
+
+  .testimonialCard:hover {
+    transform: translateY(-10px);
+  }
+ }
+
+.brandingContainer{
+  margin: 100px auto;
+
+  .brandingInnerContainer{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1080px;
+    padding: 0px 25px;
+    margin: auto;
+
+    img{
+      cursor: pointer;
+      /* when cursor point on the image it shade become 100% */
+      filter: grayscale(100%);
+    }
+    img:hover{
+      filter: grayscale(0%);
+    }
+  }
 }
