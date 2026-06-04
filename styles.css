@@ -74,25 +74,12 @@
   }
 
   .categories-item img {
-
-    /* width: 250px;
-    height: auto;
-    border-radius: 10px; */
-
-    /* width:32%;
-    height: auto; */
-
-
+    margin-bottom:30px;
     flex-basis: 20%;
-    min-width: 32%;
+    min-width: 250px;
   }
 
-  @media (max-width: 768px) {
-    .categories .container img {
-      flex-basis: 100%;
-      min-width: 100%;
-    }
-  }
+ 
 }
 
 /* styling Features */
@@ -287,6 +274,7 @@
     max-width: 1080px;
     padding: 0px 25px;
     margin: auto;
+    flex-wrap: wrap;
 
     img{
       cursor: pointer;
@@ -610,6 +598,63 @@
     background-color: #222831;
   }
 }
+
+
+@media (max-width: 600px){
+  .headerContent{
+    flex-direction: column;
+    p,
+    h1{
+      text-align: center;
+    }
+  }
+  .categories .categories-item img {
+    flex-basis: 100% ;
+    align-items: center;
+  }
+
+  .productConatiner .productCard {
+    flex-basis: 100% !important;
+    .product-title,
+    .product-price{
+      text-align: center;
+    }
+    div{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .smart-watch-banner {
+    .container {
+      flex-direction: column;
+      .smart-watch-banner-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .buyNowButton {
+          margin: 20px auto;
+        }
+      }
+    }
+  }
+
+  .testimonialParentContainer .testimonialInnerContainer .testimonialCard {
+    flex-basis: 100%;
+    
+    }
+    .footer .footerInnerContainer {
+      flex-direction: column;
+        .footerColumn {
+          text-align: center;
+        }
+        .footerStroreContainer {
+         flex-direction: column;
+        }
+    }
+  }
+  
+
 
 
 
